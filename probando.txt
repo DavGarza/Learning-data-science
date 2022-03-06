@@ -8,3 +8,5 @@ Este es el primer cambio realizado al archivo original
 Este es el segundo cambio realizo al archivo original
 
 Tercer cambio, probando diferentes ramas
+
+Conflictos, aprendiendo sobre ellos
