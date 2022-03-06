@@ -10,3 +10,5 @@ Este es el segundo cambio realizo al archivo original
 Tercer cambio, probando diferentes ramas
 
 Aprendiendo sobre conflictos
+
+Aprendiendo sobre git pull y git push
