@@ -1,5 +1,5 @@
-# Learning Git and Github
+# Learning Data Science
 
-The purpose of this repository is to learn how to use Git and Github
+The purpose of this repository is to upload and show my road to learning data science
 
 
