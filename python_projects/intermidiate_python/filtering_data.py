@@ -52,7 +52,7 @@ def main():
     young = list(map(lambda i: i["name"], young))
     print(young)
 
-    # prints the name of the persons older than 18
+    # prints the name of the persons older than 17
     adults = [i ["name"] for i in DATA if i ["age"] > 17]
     print(adults)
 
