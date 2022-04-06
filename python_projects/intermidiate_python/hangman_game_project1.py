@@ -30,10 +30,38 @@ def run():
     
     word_to_guess = random.choice(words)
     word_hided = "-" * len(word_to_guess)
+    word_hided_list = list(word_hided)
     lifes = 6
     print("Start!, you have", lifes, "lifes")
-
-
+    win = False
+    guessed_letters = []
+    letters_in_word = [letter for letter in word_to_guess]
+    while win == False and lifes > 0:
+        print(word_hided)
+        print("You have", lifes, "left")
+        guess = input("Enter a letter").upper()
+        if len(guess) == 1 and guess.isalpha():
+            if guess in guessed_letters:
+                print("You already enter", guess)
+            elif guess not in letters_in_word:
+                print(guess, "Not in the words")
+                lifes -= 1
+                guessed_letters.append(guess)
+            else:
+                print(guess, "is correct")
+                guessed_letters.append(guess)
+                indices = [i for i, letter in enumerate(word_to_guess) if letter == guess]
+                for index in indices:
+                    word_hided_list[index] = guess
+                word_hided = "".join(word_hided_list)
+                if "-" not in word_hided:
+                    win = True
+        else:
+            print("Enter only 1 letter")
+    if win == True:
+        print("Great you´ve won! :)")
+    else:
+        print("You´ve lose :( ")
 
 if __name__ == "__main__":
     run()
