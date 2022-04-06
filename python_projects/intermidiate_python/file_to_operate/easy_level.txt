@@ -1,0 +1,7 @@
+racket
+boat
+lime
+chair
+window
+run
+cale
