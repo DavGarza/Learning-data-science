@@ -61,7 +61,7 @@ def run():
     if win == True:
         print("Great you´ve won! :)")
     else:
-        print("You´ve lose :( ")
+        print("You´ve lose :( the word was", word_to_guess)
 
 if __name__ == "__main__":
     run()
