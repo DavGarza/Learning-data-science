@@ -1,3 +1,6 @@
 venv/
 .env
 .mypy_cache/
+.jpg
+.png
+.svg
